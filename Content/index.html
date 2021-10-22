@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Pun Intended: get a name!</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Get a random name with a play on words">
+    <meta name="author" content="Lucien BILL">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="analytics.js" async></script>
+    <script src="names.js" defer></script>
+    <script src="logic.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+    <link rel="manifest" href="/site.webmanifest" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Random name with a pun</h1>
+    </header>
+    <main>
+        <div id="action">
+            <input type="text" id="fname" name="fname">
+            <button type="button" id="copyToClipboard" onclick="copyToClipboard()">Copy</button>
+            <br><button type="button" id="chooseName" onclick="printARandomName(names)">Get another name</button>
+        </div>
+        <div id="warning">
+            <h3>Warning !</h3>
+            <p>Some of these puns are NSFW</p>
+        </div>
+        <details>
+            <summary>About</summary>
+            <p>This website spits out a random element from a list of names with plays on words.
+            <br>Visit the <a href="https://github.com/lucienbill/getanamewithapun">GitHub repo</a> to learn more.
+            </p>
+        </details>
+    </main>
+    <footer>
+        <p>
+            <small>Created by <a href="https://github.com/lucienbill">Lucien BILL</a> - Style : <a href="https://simplecss.org">Simple.css</a></small>
+        </p>
+    </footer>
+
+</body>
+
+</html>
