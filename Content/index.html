@@ -29,14 +29,19 @@
         <div id="action">
             <input type="text" id="fname" name="fname">
             <button type="button" id="copyToClipboard" onclick="copyToClipboard()">Copy</button>
-            <br><button type="button" id="chooseName" onclick="printARandomName(names)">Get another name</button>
-        </div>
-        <div id="warning">
-            <h3>Warning !</h3>
-            <p>Some of these puns are NSFW</p>
+            <br><button type="button" id="chooseName" onclick="printARandomName()">Get another name</button>
+            <p><label>
+                <input type="checkbox" id="allowNSFW" value="nsfw">
+                enable NSFW
+                </label></p>
         </div>
         <details>
             <summary>About</summary>
+            <h4>"NSFW ?"</h4>
+            <p>"Not safe for work" - The checkbox enables NSFW names.
+                Don't use it for work!
+            </p>
+            <h4>What's this website?</h4>
             <p>This website spits out a random element from a list of names with plays on words.
             <br>Visit the <a href="https://github.com/lucienbill/getanamewithapun">GitHub repo</a> to learn more.
             </p>
