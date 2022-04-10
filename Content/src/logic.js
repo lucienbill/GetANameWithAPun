@@ -1,15 +1,15 @@
 // --- Global variables ---
 // set timer identifier for the thing that handles how the copy button looks
-timerID = null;
+let timerID = null;
 // Stuff for the thing that handles how the copy button looks
-copyButtonLooks = {
-    "copy"   : "Copy",
-    "copied" : "Copied ✔"
+const copyButtonLooks = {
+    "copy"   : "Copier",
+    "copied" : "Copié ✔"
 }
 
 // --- Functions ---
 function printARandomName() {
-    fname = document.getElementById("fname")
+    const fname = document.getElementById("fname")
     
     if (document.getElementById("allowNSFW").checked){ //NSFW
         fname.value = allnames[Math.floor(Math.random() * allnames.length)];
@@ -21,14 +21,14 @@ function printARandomName() {
 
 function copyToClipboard() {
     // Get the text field
-    var copyText = document.getElementById("fname");
+    const copyText = document.getElementById("fname");
 
     // Copy the text inside the text field
     navigator.clipboard.writeText(copyText.value);
 
     // Notify the user that "copy" is done
     cpButton = document.getElementById("copyToClipboard")
-    cpButton.innerHTML = copyButtonLooks.copied;
+    cpButton.innerText = copyButtonLooks.copied;
 
     // Cancel the timer if it exists
     if (timerID !== null)
@@ -39,7 +39,7 @@ function copyToClipboard() {
     // Set a timer to reset the button to "copy" after a while
     timerID = setTimeout(
         function(){
-            cpButton.innerHTML = copyButtonLooks.copy;
+            cpButton.innerText = copyButtonLooks.copy;
         }
         , 2000
     )
