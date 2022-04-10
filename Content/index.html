@@ -26,22 +26,22 @@
         <h1>Random name with a pun</h1>
     </header>
     <main>
-        <div id="action">
-            <input type="text" id="fname" name="fname">
-            <button type="button" id="copyToClipboard" onclick="copyToClipboard()">Copy</button>
-            <br><button type="button" id="chooseName" onclick="printARandomName()">Get another name</button>
+        <div id="action" aria-label="form to select a random name with a pun (from a fixed list embedded in this app)">
+            <input type="text" id="fname" name="fname" aria-label="Name with a pun, chosen at random">
+            <button type="button" id="copyToClipboard" onclick="copyToClipboard()" aria-label="copy the name to your clipboard">Copy</button>
+            <br><button type="button" id="chooseName" onclick="printARandomName()" aria-label="get another name">Get another name</button>
             <p><label>
-                <input type="checkbox" id="allowNSFW" value="nsfw">
+                <input type="checkbox" id="allowNSFW" value="nsfw" aria-label="check this box to allow NSFW names to be selected">
                 enable NSFW
                 </label></p>
         </div>
-        <details>
+        <details aria-labelledby="summary">
             <summary>About</summary>
-            <h4>"NSFW ?"</h4>
+            <h2>"NSFW ?"</h2>
             <p>"Not safe for work" - The checkbox enables NSFW names.
                 Don't use it for work!
             </p>
-            <h4>What's this website?</h4>
+            <h2>What's this website?</h2>
             <p>This website spits out a random element from a list of names with plays on words.
             <br>Visit the <a href="https://github.com/lucienbill/getanamewithapun">GitHub repo</a> to learn more.
             </p>
