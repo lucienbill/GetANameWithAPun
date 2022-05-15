@@ -12,8 +12,10 @@ The list is in Content/names.js.
 ### Hosting
 I use [CloudFlare Pages](https://pages.cloudflare.com/#pricing).
 The source code of the website is in the "Content" folder (vanilla HTML + JS and a bit of CSS) ; it is 100% front-end.
+
 The deployment process is: CloudFlare copies what's in the "Content" folder on the server, and that's basicaly it.
 (Well, it's a bit more subtle than that, but you get the idea. Read the official CloudFlare documentation to know more.)
+This process is fully automated, and is trigger by any commit/merge made onto the main branch of this repo.
 
 ## Can I participate?
 Yes, you can!
