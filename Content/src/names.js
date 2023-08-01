@@ -132,4 +132,4 @@ const namesSFW = [
     'Wayne Kerr (Wanker)',
   ]
 
-  const allnames = (namesSFW+namesNSFW).split(",");
+  const allnames = (namesSFW + "," + namesNSFW).split(",");
