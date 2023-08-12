@@ -14,6 +14,7 @@
     <script src="src/logic.js" defer></script>
 
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="src/history.css">
 
     <link rel="icon" href="favicon.ico" type="image/ico">
     <link rel="apple-touch-icon" href="src/apple-touch-icon.png"/>
@@ -35,6 +36,13 @@
                 <input type="checkbox" id="allowNSFW" value="nsfw" >
             </label>
         </div>
+        <details aria-labelledby="summary" open>
+            <summary>History (<span id="historyCount"></span>)</summary>
+            <ul id="history">
+            </ul>
+            <ul id="historyNav">
+            </ul>
+          </details>
         <details aria-labelledby="summary">
             <summary>About</summary>
             <h2>"NSFW ?"</h2>
@@ -53,7 +61,6 @@
  - <a href="https://counter.dev/dashboard.html?user=BillyTheTroll&token=8_MpwBhCIS8zWc0R" title="Analytics of my websites">📊</a>
             </small>
         </p>
-        <a href="https://mastodon.comwork.io/@billythetroll" style="visibility:hidden"></a>
     </footer>
 
 </body>
